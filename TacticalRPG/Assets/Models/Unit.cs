@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Unit : MonoBehaviour
+public class Unit
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnitJob Job { get; set; }
 
-    // Update is called once per frame
-    void Update()
+    public Unit(UnitJob job)
     {
-        
+        this.Job = job;
     }
 }
